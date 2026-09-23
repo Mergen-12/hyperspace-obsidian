@@ -48,29 +48,20 @@ Edit `src/theme.src.css`, never `theme.css`.
 
 ## Publish (checklist)
 
-1. Push this repo to GitHub as a public repository (name it e.g. `hyperspace-obsidian`).
-2. Set `author` and `authorUrl` in `manifest.json`.
-3. Take a screenshot of the theme in Obsidian and save it as `screenshot.png`
-   in the repo root (16:9, around 1024×576 px; the gallery shows it small).
-4. Create a GitHub release whose tag is exactly the `version` in `manifest.json`
-   (`1.0.1`), and attach `manifest.json` and `theme.css` as release assets.
-5. Fork `obsidianmd/obsidian-releases`, add an entry to
-   `community-css-themes.json`:
+Themes are submitted through the Obsidian community portal, not by pull
+request (the old `obsidian-releases` repo no longer accepts them).
 
-   ```json
-   {
-     "name": "Hyperspace",
-     "author": "Mergen",
-     "repo": "Mergen-12/hyperspace-obsidian",
-     "screenshot": "screenshot.png",
-     "modes": ["dark", "light"]
-   }
-   ```
-
-   and open a pull request titled `Add theme: Hyperspace`. The bot checks the
-   manifest, the release assets and the screenshot; a reviewer then merges it.
-6. Later versions: bump `version` in `manifest.json`, rebuild, create a new
-   release with the same tag name as the version.
+1. Push this repo to GitHub as a public repository.
+2. Keep `manifest.json`, `README.md`, `LICENSE` and `screenshot.png` in the
+   repo root. The portal reads `manifest.json` from the default branch.
+3. Create a GitHub release whose tag is exactly the `version` in
+   `manifest.json`, and attach `manifest.json` and `theme.css` as release
+   assets (not just committed files).
+4. Sign in at https://community.obsidian.md with your Obsidian account, link
+   GitHub, and use "Add your theme". The portal reviews the entry
+   automatically and lists anything to fix under Reviews.
+5. To re-run a failed review: fix the repo, bump `version`, rebuild, and
+   publish a new release with the new tag. The portal picks it up.
 
 ## License
 
