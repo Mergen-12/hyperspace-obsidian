@@ -60,8 +60,8 @@ Edit `src/theme.src.css`, never `theme.css`.
    ```json
    {
      "name": "Hyperspace",
-     "author": "<your name>",
-     "repo": "<github-user>/hyperspace-obsidian",
+     "author": "Mergen",
+     "repo": "Mergen-12/hyperspace-obsidian",
      "screenshot": "screenshot.png",
      "modes": ["dark", "light"]
    }
@@ -80,7 +80,7 @@ MIT. Orbitron and Share Tech Mono are under the SIL Open Font License 1.1
 ```
 MIT License
 
-Copyright (c) 2026 dvt
+Copyright (c) 2026 Mergen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
