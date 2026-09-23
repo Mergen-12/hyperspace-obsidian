@@ -53,7 +53,7 @@ Edit `src/theme.src.css`, never `theme.css`.
 3. Take a screenshot of the theme in Obsidian and save it as `screenshot.png`
    in the repo root (16:9, around 1024×576 px; the gallery shows it small).
 4. Create a GitHub release whose tag is exactly the `version` in `manifest.json`
-   (`1.0.0`), and attach `manifest.json` and `theme.css` as release assets.
+   (`1.0.1`), and attach `manifest.json` and `theme.css` as release assets.
 5. Fork `obsidianmd/obsidian-releases`, add an entry to
    `community-css-themes.json`:
 
